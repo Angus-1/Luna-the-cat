@@ -79,7 +79,7 @@
           selected = images[nextIdx].banner_image
       
           }}>
-          下一張
+    
         </button>
         <img in:receive={{key:selected}} out:send={{key: selected}} src="{selected}" />
         <div aria-label="Image Viewer" role="group" bind:this={gallery} use:keyboard={{ shortcut }} class="gallery" tabindex={0}>
@@ -91,7 +91,7 @@
       {/if}
       <p class="visually-hidden" aria-atomic={true} aria-live="assertive">
         {#if images[currentIdx]}
-        您現在正在查看：{images[currentIdx].name}
+         {images[currentIdx].name}
         {/if}
       </p>
   </Text>
@@ -104,8 +104,8 @@
 	
 	.gallery-container {
 		display: grid;
-		grid-template-columns: repeat(3, 100px);
-		grid-gap: 10px;
+		grid-template-columns: repeat(3, 10rem);
+		grid-gap: 15px;
 	}
 	
 	.visually-hidden {
