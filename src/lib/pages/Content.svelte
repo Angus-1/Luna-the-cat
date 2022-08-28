@@ -1,4 +1,6 @@
 <script lang="ts">
+import Anchor from "$lib/components/Anchor.svelte";
+
   import Link from "$lib/components/Link.svelte";
   import Page from "$lib/components/Page.svelte";
   import Text from "$lib/components/Text.svelte";
@@ -51,8 +53,12 @@
 	};
 </script>
 
-<Page id="content" title=" " {backgroundClass}>
-  <Text>
+<Anchor id="content" />
+  <div
+	
+	id="bg"
+  >
+		<div class="page-wrapper">
     <div class="gallery-container">
       {#each images as d (d.banner_image)}
           <div>
@@ -94,8 +100,9 @@
          {images[currentIdx].name}
         {/if}
       </p>
-  </Text>
-</Page>
+	</div>
+</div>
+
 
 
 <style>
@@ -104,7 +111,7 @@
 	
 	.gallery-container {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 		grid-gap: 15px;
 	}
 	

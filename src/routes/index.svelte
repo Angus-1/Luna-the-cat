@@ -9,7 +9,7 @@
   import Footer from "$lib/pages/Footer.svelte";
 
 /* basic colors at  https://tailwindcss.com/docs/customizing-colors   more at  https://hypercolor.dev/   */ 
-  let primaryBackground = "bg-gradient-to-r from-Gray-900 to-Gray-900";
+  let primaryBackground = "bg-gradient-to-r from-gray-900 to-green-300";
   let neutralBackground = "bg-neutral-200 dark:bg-neutral-900";
 </script>
 
@@ -21,6 +21,6 @@
 
 <Home />
 <!--About me/bio-->
-<Content backgroundClass={primaryBackground} />
+<Content />
 
 <Footer backgroundClass={neutralBackground} />
