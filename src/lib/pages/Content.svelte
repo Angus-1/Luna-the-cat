@@ -108,6 +108,8 @@ import Anchor from "$lib/components/Anchor.svelte";
 <style>
 
 #bg {
+	padding-top:3rem;
+	padding-bottom:3rem;
     /* The image used background-image: url("/assets/images/background1.jpg"); */
     background-image: linear-gradient(217deg, rgb(40, 112, 101), rgba(255,0,0,0) 70.71%),
       linear-gradient(127deg, rgba(0, 0, 0, 0.8), rgba(0,255,0,0) 70.71%),
