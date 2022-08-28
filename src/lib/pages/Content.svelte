@@ -104,7 +104,7 @@
 	
 	.gallery-container {
 		display: grid;
-		grid-template-columns: repeat(3, 10rem);
+		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 15px;
 	}
 	
@@ -114,8 +114,10 @@
 	
 	.image {
 		width: 100%;
-		height: 100px;
+		height: 300px;
 		background: center / cover no-repeat;
+		border-radius: 10px;
+
 	}
 	
 	.gallery {
