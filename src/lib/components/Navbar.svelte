@@ -36,7 +36,7 @@
   const menuDuration = 200;
   let open = false;
   let colors = {
-    nav: "bg-neutral-800",
+    nav: "bg-neutral-900",
     button: {
       active:
         "bg-primary-200 hover:bg-primary-300 dark:bg-green-300 dark:hover:bg-primary-700 shadow-md",
