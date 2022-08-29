@@ -23,27 +23,27 @@
       id: "#home",
       route: "/home",
       name: "home",
-      title: "Home",
+      title: "Welcome",
     },
     {
       id: "#content",
       route: "/content",
       name: "content",
-      title: "content",
+      title: "Gallery",
     },
 
   ];
   const menuDuration = 200;
   let open = false;
   let colors = {
-    nav: "bg-neutral-300 dark:bg-neutral-800",
+    nav: "bg-neutral-800",
     button: {
       active:
-        "bg-primary-200 hover:bg-primary-300 dark:bg-primary-800 dark:hover:bg-primary-700 shadow-md",
+        "bg-primary-200 hover:bg-primary-300 dark:bg-green-300 dark:hover:bg-primary-700 shadow-md",
       inactive:
-        "bg-neutral-50 hover:bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-600 shadow-md",
+        "bg-neutral-50 hover:bg-neutral-200 dark:bg-neutral-300 dark:hover:bg-neutral-600 shadow-md",
     },
-    buttonText: "text-neutral-800 dark:text-neutral-200",
+    buttonText: "text-neutral-700 dark:text-neutral-700",
   };
 
   let activeHash = "";
