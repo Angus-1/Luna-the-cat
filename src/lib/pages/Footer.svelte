@@ -62,7 +62,7 @@
   
 } 
 #theme {
---primary: black;
+--primary: #1F2937;
 --comp-primary: black;
 --white: white;
 --gray-200: #374151;
