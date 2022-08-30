@@ -20,7 +20,7 @@
 />
 
 
-<!--About me/bio-->
+
 <Content />
 
 <Footer backgroundClass={neutralBackground} />
