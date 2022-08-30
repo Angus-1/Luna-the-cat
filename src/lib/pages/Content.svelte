@@ -135,7 +135,7 @@ import Anchor from "$lib/components/Anchor.svelte";
 		height: 300px;
 		background: center / cover no-repeat;
 		border-radius: 10px;
-
+		
 	}
 	
 	.gallery {
@@ -155,6 +155,8 @@ import Anchor from "$lib/components/Anchor.svelte";
 	
 	.image-viewer {
 		padding: 20px;
+		padding-left:10rem;
+		
 		position: fixed;
 		width: 100%;
 		height: 100%;
