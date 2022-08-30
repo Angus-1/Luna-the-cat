@@ -13,7 +13,7 @@
 </script>
 
 <SEO
-  title="Luna's Gallery "
+  title=" Luna's Gallery "
   description="Cat!"
   canonical=""
 />
