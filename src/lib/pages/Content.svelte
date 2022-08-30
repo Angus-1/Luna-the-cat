@@ -155,8 +155,8 @@ import Anchor from "$lib/components/Anchor.svelte";
 	
 	.image-viewer {
 		padding: 20px;
-		padding-left:10rem;
-		
+		padding-left:6rem;
+		padding-top:6rem;
 		position: fixed;
 		width: 100%;
 		height: 100%;
