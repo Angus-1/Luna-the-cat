@@ -14,9 +14,9 @@
 </script>
 
 <SEO
-  title="site name"
-  description="site desc"
-  canonical="link"
+  title="Luna's Gallery "
+  description="Cat!"
+  canonical=""
 />
 
 <Home />
