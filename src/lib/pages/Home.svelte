@@ -23,8 +23,7 @@
     /* The image used background-image: url("/assets/images/background1.jpg"); */
     background-image: linear-gradient(217deg, rgb(89, 255, 191), rgba(255,0,0,0) 70.71%),
       linear-gradient(127deg, rgba(0, 0, 0, 0.8), rgba(0,255,0,0) 70.71%),
-      linear-gradient(336deg, rgba(75, 75, 75, 0.8), rgba(0,0,255,0) 70.71%);
-    
+      linear-gradient(336deg, rgba(0, 0, 0, 0.8), rgba(0,0,255,0) 70.71%);
   }
 
   .text-2{

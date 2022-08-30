@@ -112,9 +112,8 @@ import Anchor from "$lib/components/Anchor.svelte";
 	padding-bottom:3rem;
     /* The image used background-image: url("/assets/images/background1.jpg"); */
     background-image: linear-gradient(217deg, rgb(40, 112, 101), rgba(255,0,0,0) 70.71%),
-      linear-gradient(127deg, rgba(0, 0, 0, 0.8), rgba(0,255,0,0) 70.71%),
-      linear-gradient(336deg, rgba(75, 75, 75, 0.8), rgba(0,0,255,0) 70.71%);
-    
+      linear-gradient(127deg, rgba(0, 0, 0, 0.8), rgba(10, 10, 10, 0) 70.71%),
+      linear-gradient(336deg, rgba(0, 0, 0, 0.8), rgba(0,0,255,0) 70.71%);
   }
 
   * { box-sizing: border-box; }
