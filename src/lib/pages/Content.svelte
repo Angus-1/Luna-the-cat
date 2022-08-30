@@ -64,7 +64,7 @@ import Anchor from "$lib/components/Anchor.svelte";
 	<div class="text-center">
 		<h1 class="text-5xl m-6 {color} font-light">🌙 Luna's Gallery 🖼️ </h1>
 	  </div>
-	  <br>
+	  <br><br>
 
 		<div class="page-wrapper">
     <div class="gallery-container">
