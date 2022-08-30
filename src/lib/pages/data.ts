@@ -36,31 +36,31 @@ const data = [
       "banner_image": "cat_pics/cat_9.png"
     },
     {
-      "name": "img9",
+      "name": "img10",
       "banner_image": "cat_pics/cat_10.png"
     },
     {
-      "name": "img9",
+      "name": "img11",
       "banner_image": "cat_pics/cat_11.png"
     },
     {
-      "name": "img9",
+      "name": "img12",
       "banner_image": "cat_pics/cat_12.png"
     },
     {
-      "name": "img9",
+      "name": "img13",
       "banner_image": "cat_pics/cat_13.png"
     },
     {
-      "name": "img9",
+      "name": "img14",
       "banner_image": "cat_pics/cat_14.png"
     },
     {
-      "name": "img9",
+      "name": "img15",
       "banner_image": "cat_pics/cat_15.png"
     },
     {
-      "name": "img9",
+      "name": "img16",
       "banner_image": "cat_pics/cat_16.png"
     }
   ]
