@@ -34,6 +34,34 @@ const data = [
     {
       "name": "img9",
       "banner_image": "cat_pics/cat_9.png"
+    },
+    {
+      "name": "img9",
+      "banner_image": "cat_pics/cat_10.png"
+    },
+    {
+      "name": "img9",
+      "banner_image": "cat_pics/cat_11.png"
+    },
+    {
+      "name": "img9",
+      "banner_image": "cat_pics/cat_12.png"
+    },
+    {
+      "name": "img9",
+      "banner_image": "cat_pics/cat_13.png"
+    },
+    {
+      "name": "img9",
+      "banner_image": "cat_pics/cat_14.png"
+    },
+    {
+      "name": "img9",
+      "banner_image": "cat_pics/cat_15.png"
+    },
+    {
+      "name": "img9",
+      "banner_image": "cat_pics/cat_16.png"
     }
   ]
   /*using same image twice will break zoom/carousel feature */
