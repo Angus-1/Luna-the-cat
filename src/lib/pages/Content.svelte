@@ -51,13 +51,19 @@ import Anchor from "$lib/components/Anchor.svelte";
 
   	}
 	};
+
+	let color = "text-grey-200";
+  let hover = "sm:hover:text-primary-500";
+ 
 </script>
 
 <Anchor id="content" />
-  <div
-	
-	id="bg"
-  >
+
+  <div id="bg">
+	<div class="text-center">
+		<h1 class="text-5xl m-6 {color} font-light">🌙 Luna the cat  </h1>
+	  </div>
+
 		<div class="page-wrapper">
     <div class="gallery-container">
       {#each images as d (d.banner_image)}

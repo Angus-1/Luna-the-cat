@@ -19,7 +19,7 @@
   canonical=""
 />
 
-<Home />
+
 <!--About me/bio-->
 <Content />
 
