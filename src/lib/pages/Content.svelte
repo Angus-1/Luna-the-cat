@@ -172,7 +172,7 @@ import Anchor from "$lib/components/Anchor.svelte";
 	}
 	
 	.image-viewer > img {
-		max-height: 70%;
+		max-height: 80%;
 	}
 </style>
 
