@@ -62,8 +62,8 @@
   
 } 
 #theme {
---primary: #1f2937;
---comp-primary: #f3f4f6;
+--primary: black;
+--comp-primary: black;
 --white: white;
 --gray-200: #374151;
 --black: black;
