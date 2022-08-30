@@ -13,7 +13,7 @@
   id="bg"
 >
   <div class="text-center">
-    <h1 class="text-5xl m-6 {color} font-light">🌙 Luna the cat 🐈‍⬛ </h1>
+    <h1 class="text-5xl m-6 {color} font-light">🌙 Luna the cat  </h1>
   </div>
 
 </div>
