@@ -36,12 +36,12 @@
   const menuDuration = 200;
   let open = false;
   let colors = {
-    nav: "bg-neutral-900",
+    nav: "bg-zinc-900",
     button: {
       active:
-        "bg-primary-200 hover:bg-primary-300 dark:bg-green-300 dark:hover:bg-primary-700 shadow-md",
+        "bg-primary-200 hover:bg-primary-300 dark:bg-green-300 dark:hover:bg-green-700 shadow-md",
       inactive:
-        "bg-neutral-50 hover:bg-neutral-200 dark:bg-neutral-300 dark:hover:bg-neutral-600 shadow-md",
+        "bg-neutral-50 hover:bg-neutral-500 dark:bg-neutral-300 dark:hover:bg-neutral-500 shadow-md",
     },
     buttonText: "text-neutral-700 dark:text-neutral-700",
   };
