@@ -13,45 +13,8 @@ import Anchor from "$lib/components/Anchor.svelte";
 
   import { tick } from 'svelte';
 	import { crossfade, fade } from 'svelte/transition';
-  import images from './data';
+  import photos from './data';
 	import keyboard from './keyboard';
-	let selected = '';
-	let gallery: HTMLDivElement;
-	const [send, receive] = crossfade({
-		duration: () => 350,
-		fallback: fade,
-	})
-	
-	const handlePreviewClick = (imageURL: string) => {
-		selected = imageURL
-	}
-	
-	$: currentIdx = selected ? images.findIndex(d => d.banner_image === selected) : -1
-	
-	const shortcut = {
-		'ArrowRight': async (e: { preventDefault: () => void; }) => {
-			e.preventDefault()
-			const nextIdx = (currentIdx + 1) % images.length;
-			selected = images[nextIdx].banner_image
-			await tick()
-			const active = gallery.querySelector('[data-selected="true"]');
-			if (active) {
-				active.scrollIntoView();
-			}
-		},
-		'ArrowLeft': async (e: { preventDefault: () => void; }) => {
-			e.preventDefault();
-			const nextIdx = currentIdx === 0 ? images.length - 1 : (currentIdx - 1) % images.length;
-			selected = images[nextIdx].banner_image
-			await tick()
-			const active = gallery.querySelector('[data-selected="true"]');
-			if (active) {
-				active.scrollIntoView();
-			}
-
-  	}
-	};
-
 	let color = "text-grey-200";
   let hover = "sm:hover:text-primary-500";
  
@@ -68,53 +31,18 @@ import Anchor from "$lib/components/Anchor.svelte";
 
 		<div class="page-wrapper">
     <div class="gallery-container">
-      {#each images as d (d.banner_image)}
-          <div>
-        {#if d.banner_image !== selected}
-          <div role="img" aria-label="{d.name}" out:send={{key:d.banner_image}} in:receive={{key: d.banner_image}} on:click={() => handlePreviewClick(d.banner_image)} class="image" style="background-image: url({d.banner_image});" />		
-        {/if}
-        </div>
-      {/each}	
+		{#each photos as photo}
+		<a sveltekit:prefetch href="/{photo.photo_id}">
+		  <img src={photo.src} alt="{photo.title}" />
+		</a>
+	  {/each}
       </div>
-      
-      {#if selected}
-      <div class="image-viewer" on:click={(e) => {
-        if (e.target === e.currentTarget) {
-          selected = ''
-        }	
-      }}>
-        <button on:click={() => {
-          const nextIdx = (currentIdx - 1) % images.length;
-          selected = images[nextIdx].banner_image
-        }}>
-        </button>
-        <button on:click={() => {
-              const nextIdx = (currentIdx + 1) % images.length;
-          selected = images[nextIdx].banner_image
-      
-          }}>
-    
-        </button>
-        <img in:receive={{key:selected}} out:send={{key: selected}} src="{selected}" />
-        <div aria-label="Image Viewer" role="group" bind:this={gallery} use:keyboard={{ shortcut }} class="gallery" tabindex={0}>
-          {#each images as image (image.name)}
-            <div role="img" aria-label={image.name} data-selected={selected === image.banner_image} class:active={selected === image.banner_image} on:click={() => selected = image.banner_image} class="image" style="background-image:url({image.banner_image})" />
-          {/each}
-        </div>
-      </div>
-      {/if}
-      <p class="visually-hidden" aria-atomic={true} aria-live="assertive">
-        {#if images[currentIdx]}
-         {images[currentIdx].name}
-        {/if}
-      </p>
 	</div>
+    
 </div>
 
 
-
 <style>
-
 #bg {
     /* The image used background-image: url("/assets/images/background1.jpg"); */
 	padding-top:1rem;
