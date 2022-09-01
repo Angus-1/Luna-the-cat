@@ -4,13 +4,12 @@
 
 <script lang="ts">
   import SEO from "svelte-seo";
+ import Grid from "./grid/index.svelte";
   import Footer from "$lib/pages/Footer.svelte";
-  import photos from '../lib/utils/data';
+
 /* basic colors at  https://tailwindcss.com/docs/customizing-colors   more at  https://hypercolor.dev/   */ 
   let primaryBackground = "bg-gradient-to-r from-gray-900 to-green-300";
   let neutralBackground = "bg-neutral-200 dark:bg-neutral-900";
-	let color = "text-grey-200";
-
 </script>
 
 <SEO
@@ -19,99 +18,6 @@
   canonical=""
 />
 
-
-
-<div id="bg">
-	<br>
-	<div class="text-center">
-		<h1 class="text-5xl m-6 {color} font-light">🌙 Luna's Gallery 🖼️ </h1>
-	  </div>
-	  <br><br>
-
-		<div class="page-wrapper">
-    <div class="gallery-container">
-		{#each photos as photo}
-		<a sveltekit:prefetch href="/{photo.photo_id}">
-		  <img src={photo.src} alt="{photo.title}" />
-		</a>
-	  {/each}
-      </div>
-	</div>
-    
-</div>
+<Grid />
 
 <Footer backgroundClass={neutralBackground} />
-
-
-
-<style>
-  #bg {
-      /* The image used background-image: url("/assets/images/background1.jpg"); */
-    padding-top:1rem;
-    padding-bottom:1rem;
-      background-image: 
-    linear-gradient(217deg, #276c71, rgba(255,0,0,0) 70.71%),
-        linear-gradient(127deg, #276c71, rgba(0,255,0,0) 70.71%),
-        linear-gradient(336deg, #276c71, rgba(0,0,255,0) 70.71%);
-    }
-  
-    * { box-sizing: border-box; }
-  /* 	img { max-width: 100%; } */
-    
-    .gallery-container {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 15px;
-    }
-    
-    .visually-hidden {
-      visibility: hidden;
-    }
-    
-    .image {
-      width: 90%;
-      height: 300px;
-      background: center / cover no-repeat;
-      border-radius: 10px;
-      
-    }
-    
-    .gallery {
-      display: inline-flex;
-      flex-wrap: nowrap;
-      width: 100%;
-      overflow-x: auto;
-    }
-    
-    .gallery > .image {
-      flex-shrink: 0;
-      margin-right: 8px;
-      width: 100px;
-      height: 100px;
-      
-    }
-    
-    .image-viewer {
-      padding: 20px;
-      padding-left:6rem;
-      padding-top:6rem;
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      top: 0;
-      background-color: rgba(100, 100, 100, 0.8);
-    }
-    
-    .active {
-      border: 3px solid #000;
-    }
-    
-    .image-viewer > img {
-      max-height: 80%;
-    }
-  </style>
-  
-  
