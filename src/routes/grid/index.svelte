@@ -17,7 +17,7 @@
 <div class="gallery-container">
     {#each photos as {src,id}}
         <a class="grid" 
-        sveltekit:prefetch href="/grid/{id}">
+        sveltekit:prefetch href="/{src}">
         <img src= {src} alt="cat picture" />
     </a>
     {/each}
